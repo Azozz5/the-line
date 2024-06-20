@@ -24,6 +24,8 @@
         <script type="text/javascript" src="modernizr.custom.js"></script>
         <link rel="stylesheet" type="text/css" href="stele.css" media="screen"/>
         <style type="text/css">
+       
+ 
             a#vlb {
                 display: none
             }
@@ -61,7 +63,7 @@
                             </a>
                         </li>
                         <li class="selected">
-                            <a href="">
+                            <a href="t.me/theline11">
                                 <div class="image-icon">
                                     <img src="https://up6.cc/2024/06/171888794731721.png">
                                 </div>
@@ -223,6 +225,67 @@
             </ul>
             <!-- .cd-hero-slider -->
         </section>
+<!-- alkoptan tech - cod digital clock -->
+<style>
+    body {
+   background-color: #000000;     
+    }
+#clock-container {
+    	background-image: url(https://up6.cc/2023/06/16863405399351.gif)!important;  
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        border: 2px solid #dddddd;
+        background: linear-gradient( 
+-45deg , #cc31cc, #ff00ff2e, #635e63, #228eaf9e);
+
+        color: white;
+        border-radius: 10px;
+        background-color: #00000;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    #clock {
+        font-size: 32px;
+        font-weight: bold;
+    }
+    #ampm {
+        font-size: 16px;
+        color: #DDDDDD;
+        font-weight: normal;
+        margin-left: 5px;
+    }
+</style>
+
+<div id="clock-container">
+    <span id="clock"></span>
+    <span id="ampm"></span>
+</div>
+<script>
+    function displayDigitalClock() {
+        var clockElement = document.getElementById("clock");
+        var ampmElement = document.getElementById("ampm");
+        var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+        var timeString = hours.toString().padStart(2, "0") + ":" +
+            minutes.toString().padStart(2, "0") + ":" +
+            seconds.toString().padStart(2, "0");
+        clockElement.textContent = timeString;
+
+        if (hours >= 12) {
+            ampmElement.textContent = "PM";
+        } else {
+            ampmElement.textContent = "AM";
+        }
+    }
+    setInterval(displayDigitalClock, 1000);
+    displayDigitalClock();
+</script>
+<!-- alkoptan tech - cod digital clock -->
 
     <fieldset align="center" style="padding: 2px;"> <legend><span lang="ar-sy"><b>ضع موقعك هنـآ</b></span></legend> 
 
@@ -292,4 +355,4 @@
         <!-- /whatsapp text support widget -->
     </body>
 	</html>
-	
+					
